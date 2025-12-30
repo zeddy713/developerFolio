@@ -23,7 +23,7 @@ const greeting = {
   username: "Zed Li",
   title: "Hi all, I'm Zed",
   subTitle: emoji(
-    "A passionate student in Business Analytics 🚀 having experience as a data analyst. Specialised in Python, MySQL and Tableau!"
+    "A passionate coder in Business Analytics 🚀, having experience as a data analyst. Specialised in Python, SQL and Data Visualisation!"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -46,53 +46,25 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle: "Dedicated data analyst who wants to explore every aspect of data!",
-    // ...existing code...
+  // ...existing code...
   skills: [
     emoji("⚡ Analyze complex datasets to extract actionable business insights"),
     emoji("⚡ Build interactive dashboards and reports using Python, SQL, and Tableau"),
     emoji("⚡ Automate data collection, cleaning, and visualization processes"),
     emoji("⚡ Integrate data from multiple sources such as APIs, databases, and cloud platforms")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    
-    {
-      skillName: "MySQL",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Tableau",
-      fontAwesomeClassname: "fas fa-table"
-    },
-   
-    {
-      skillName: "github",
-      fontAwesomeClassname: "fab fa-github"
-    }
-    
+    { skillName: "html-5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "MySQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Tableau", fontAwesomeClassname: "fas fa-table" },
+    { skillName: "github", fontAwesomeClassname: "fab fa-github" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Education Section
 
@@ -104,7 +76,7 @@ const educationInfo = {
       logo: require("./assets/images/ubcLogo.png"),
       subHeader: "Master of Business Analytics",
       duration: "September 2025 - August 2026",
-      desc: "Sauder Business School. Courses include Data Analytics, Machine Learning, Business Intelligence, and more.",
+      desc: "Sauder Business School. Courses include Data Analytics, Machine Learning, Business Intelligence, and more."
     
     },
     {
@@ -112,7 +84,7 @@ const educationInfo = {
       logo: require("./assets/images/nottinghamLogo.png"),
       subHeader: "Bachelor of Science with Honours in International Business Management",
       duration: "September 2020 - July 2024",
-      desc: "Ranked top 15% in the program. Achieved Dream Scholarship, Locktek Scholarship and Oversea Exchange to the Neoma University in France.",
+      desc: "Ranked top 15% in the program. Achieved Dream Scholarship, Locktek Scholarship and Overseas Exchange to Neoma University in France."
     
     }
   ]
@@ -128,12 +100,12 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Visualization Tools",
+      Stack: "Visualisation Tools",
       progressPercentage: "80%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -145,14 +117,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Coder",
+      company: "Fathom AI",
+      companylogo: require("./assets/images/icoolLogo.png"),
+      date: "Sep 2025 – Present",
+      descBullets: [
+        " Database Setup: Set up a database for analysis by selecting key words from raw data as primary identifiers, and use AI models to automatically group and label the data, creating a solid foundation for later automated analysis. ",
+        " Data Reviewing: Optimised data structure accuracy, reducing FN/FP error by 30%/25% respectively and lifting overall accuracy to 95%. "
+      ]
+    },
+    {
       role: "Territory Manager",
       company: "ICOOL HVAC Company",
       companylogo: require("./assets/images/icoolLogo.png"),
       date: "Aug 2024 – Jun2025",
       descBullets: [
-        "Managed and expanded B2B client base across Quebec (Canada) and Georgia, Texas, Alabama, Tennessee (U.S.), acquiring an average of 2 new clients monthly through online channels and industry trade shows ",
-        "Delivered end-to-end customer service, handling 30+ daily inquiries on pricing, order tracking, and technical support; leveraged CRM tools to manage client data and drive monthly sales of USD 800,000 ",
-        "Led international business trips, visiting 5 clients per day to provide on-site technical solutions; converted 30+ prospects into active clients and secured USD 1.5 million in sales while building long-term partnerships"
+        " Business Development: Led client development across Canada and the U.S Southeast, acquiring an average of 2 new clients monthly via cold calls, industry trade shows and store visits. ",
+        " Working Task: Standardised support workflows, set clear response-time targets, and used CRM for closure—keeping 30+ daily inquiries on time and high quality and consistently supporting USD 1.2M/month in sales. ",
+        " Business Travel Experience: Increased retention and satisfaction via frequent in-store/on-site visits and value reviews; safeguarded existing accounts while converting 30+ clients into long-term partnerships, achieving USD 1.5M in sales during the international business trips. "
       ]
     },
     {
@@ -161,19 +143,8 @@ const workExperiences = {
       companylogo: require("./assets/images/haysLogo.png"),
       date: "Jul 2023 – Sep 2023",
       descBullets: [
-        "Screened and recommended qualified candidates for over 20 roles at partner foreign banks, ensuring accurate talent matching and consistent follow-up on recruitment progress ",
-        "Conducted 400+ phone interviews and optimised candidate resumes, increasing shortlist success rate by 80% and delivered a standout placement for a foreign bank at a 200,000 annual salary and contributed to over 100 successful hires for the firm "
-      ]
-    },
-    {
-      role: "Data Project Team Leader",
-      company: "Nottingham Business School",
-      companylogo: require("./assets/images/nbsLogo.png"),
-      date: "Sep 2023 – Dec 2023",
-      descBullets: [
-        "Utilised MySQL for the cleansing and filtering of outliers and variables within a substantial original database, facilitating data integrity for subsequent in-depth analytical pursuits ",
-        "Applied logistic regression algorithm and decision tree models in PyCharm by using Python, leveraging crossvalidation to evaluate data reliability ",
-        "Visualised data results and the correlation metrics between variables using Tableau"
+        "Screened and recommended qualified candidates for over 20 roles at partner foreign banks, ensuring accurate talent matching and consistent follow-up on recruitment progress. ",
+        "Conducted 400+ phone interviews and optimised candidate resumes, increasing shortlist success rate by 80% and delivered a standout placement for a foreign bank at a 200,000 annual salary and contributed to over 100 successful hires for the firm. "
       ]
     }
   ]
@@ -190,35 +161,34 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "My Project Experience",
+  subtitle: "Focusing on the real estate, healthcare and financial industry",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Analysis of Real Estate Industry Business",
+      projectDesc:
+        "Data Scraping: Led a team to conduct exploratory analysis on local Canadian real estate data, processing approximately 50,000 property listings and transaction records with a focus on key variables such as price range, location, and property type.\n" +
+        "Data Processing: Used Pandas and NumPy for missing-value handling, outlier detection, and combined NLTK with scikit-learn to extract key information from listing descriptions and market reports, building a high-quality feature set for modelling and strategy analysis.\n" +
+        "Data Visualisation: Visualised keywords and patterns with Matplotlib and WordCloud to surface regional trends and support the team’s market insight report and presentations.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
+        { name: "Visit Website", url: "http://saayahealth.com/" }
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Analysis of Customer Cancellation Rate in Hospitality Industry",
+      projectDesc:
+        "Database Learning: Analysed approximately 20,000 hotel booking and customer records using MySQL, performing data cleaning (missing-value handling, outlier and variable filtering) and reducing noisy or invalid records by 20%, improving data integrity for downstream analysis.\n" +
+        "Tableau Visualization: Developed a Tableau dashboard to present cancellation trends across time periods, channels and customer segments, supporting the team’s final report and presentations.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+        { name: "Visit Website", url: "http://nextu.se/" }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
